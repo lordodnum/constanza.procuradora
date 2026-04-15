@@ -1,0 +1,21 @@
+{
+  "name": "constanza-acevedo-landing",
+  "version": "1.0.0",
+  "description": "Landing page profesional para Constanza Acevedo - Procuradora Habilitada",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build needed'",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "landing-page",
+    "procuradora",
+    "legal",
+    "chile"
+  ],
+  "author": "Constanza Acevedo",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constanza Acevedo | Procuradora Habilitada</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lavender: '#E8E0F0',
+                        'lavender-light': '#F5F1F8',
+                        mint: '#D4E8E4',
+                        'mint-light': '#E8F4F2',
+                        rose: '#F8E1E7',
+                        'rose-light': '#FDF2F5',
+                        'text-dark': '#4A4A4A',
+                        'text-medium': '#6B6B6B',
+                        'text-light': '#8B8B8B',
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px rgba(139, 115, 139, 0.08)',
+                        'hover': '0 8px 30px rgba(139, 115, 139, 0.15)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Animación de entrada suave */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .animate-delay-1 { animation-delay: 0.1s; }
+        .animate-delay-2 { animation-delay: 0.2s; }
+        .animate-delay-3 { animation-delay: 0.3s; }
+        .animate-delay-4 { animation-delay: 0.4s; }
+        .animate-delay-5 { animation-delay: 0.5s; }
+
+        /* Profile ring gradient border */
+        .profile-ring {
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            right: -8px;
+            bottom: -8px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #F8E1E7, #E8E0F0, #D4E8E4);
+            z-index: -1;
+        }
+
+        /* Smooth hover transitions */
+        .service-card {
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px) scale(1.01);
+        }
+
+        /* Contact item transitions */
+        .contact-item {
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="font-sans bg-white text-text-dark opacity-0 animate-fade-in">
+    
+    <!-- Header -->
+    <header class="text-center px-4 sm:px-6 pt-8 sm:pt-12 pb-6 sm:pb-8 bg-gradient-to-b from-lavender-light to-white opacity-0 animate-fade-in animate-delay-1">
+        <div class="mb-4 sm:mb-5">
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-br from-rose via-lavender to-mint flex items-center justify-center mx-auto shadow-soft">
+                <span class="font-serif text-2xl sm:text-3xl font-semibold text-text-dark">CA</span>
+            </div>
+        </div>
+        <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl font-medium text-text-dark tracking-wide mb-2">Constanza Acevedo</h1>
+        <p class="text-sm sm:text-base text-text-medium font-light tracking-widest uppercase">Habilitada en Derecho y Procuradora</p>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="text-center px-4 sm:px-6 py-8 sm:py-12 md:py-16 opacity-0 animate-fade-in animate-delay-2">
+        <div class="relative inline-block mb-6 sm:mb-8">
+            <div class="profile-ring"></div>
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=face" 
+                 alt="Constanza Acevedo" 
+                 class="w-32 h-32 sm:w-44 sm:h-44 md:w-48 md:h-48 rounded-full object-cover border-4 border-white shadow-soft">
+        </div>
+        <div class="max-w-xl mx-auto px-4">
+            <p class="text-base sm:text-lg text-text-medium font-light leading-relaxed">
+                Asesoría legal integral con compromiso, empatía y resultados. Especializada en brindar soluciones jurídicas personalizadas para personas y empresas.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="px-4 sm:px-6 py-8 sm:py-12 md:py-16 max-w-6xl mx-auto opacity-0 animate-fade-in animate-delay-3">
+        <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl text-center text-text-dark font-medium mb-8 sm:mb-12">Servicios Legales</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+            
+            <!-- Cobro de Pensión de Alimentos -->
+            <a href="https://wa.me/+56948754478?text=Hola%20Constanza%2C%20necesito%20informaci%C3%B3n%20sobre%20el%20Cobro%20de%20Pensi%C3%B3n%20de%20Alimentos." 
+               target="_blank" 
+               class="service-card block w-full bg-gradient-to-br from-lavender-light to-white rounded-2xl p-5 sm:p-6 shadow-soft hover:shadow-hover border border-lavender/50">
+                <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-lavender flex items-center justify-center mb-4 text-xl sm:text-2xl">👨‍👩‍👧</div>
+                <h3 class="font-serif text-lg sm:text-xl font-medium text-text-dark mb-2">Cobro de Pensión de Alimentos</h3>
+                <p class="text-sm sm:text-base text-text-medium font-light leading-relaxed">Gestión integral para el cobro efectivo de pensiones alimenticias, asegurando el cumplimiento de las obligaciones familiares.</p>
+            </a>
+
+            <!-- Cobro Especial Fondos AFP -->
+            <a href="https://wa.me/+56948754478?text=Hola%20Constanza%2C%20te%20escribo%20por%20el%20Cobro%20Especial%20de%20Fondos%20AFP." 
+               target="_blank" 
+               class="service-card block w-full bg-gradient-to-br from-mint-light to-white rounded-2xl p-5 sm:p-6 shadow-soft hover:shadow-hover border border-mint/50">
+                <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-mint flex items-center justify-center mb-4 text-xl sm:text-2xl">💰</div>
+                <h3 class="font-serif text-lg sm:text-xl font-medium text-text-dark mb-2">Cobro Especial Fondos AFP</h3>
+                <p class="text-sm sm:text-base text-text-medium font-light leading-relaxed">Asesoría y representación para el cobro especial de fondos previsionales ante instituciones de AFP.</p>
+            </a>
+
+            <!-- Solicitud de Apremios -->
+            <a href="https://wa.me/+56948754478?text=Hola%20Constanza%2C%20requiero%20asesor%C3%ADa%20para%20una%20Solicitud%20de%20Apremios." 
+               target="_blank" 
+               class="service-card block w-full bg-gradient-to-br from-rose-light to-white rounded-2xl p-5 sm:p-6 shadow-soft hover:shadow-hover border border-rose/50">
+                <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-rose flex items-center justify-center mb-4 text-xl sm:text-2xl">⚖️</div>
+                <h3 class="font-serif text-lg sm:text-xl font-medium text-text-dark mb-2">Solicitud de Apremios</h3>
+                <p class="text-sm sm:text-base text-text-medium font-light leading-relaxed">Trámite de apremios para el cumplimiento forzoso de obligaciones judiciales y administrativas.</p>
+            </a>
+
+            <!-- Posesiones Efectivas -->
+            <a href="https://wa.me/+56948754478?text=Hola%20Constanza%2C%20me%20gustar%C3%ADa%20consultar%20sobre%20Posesiones%20Efectivas." 
+               target="_blank" 
+               class="service-card block w-full bg-gradient-to-br from-lavender-light to-white rounded-2xl p-5 sm:p-6 shadow-soft hover:shadow-hover border border-lavender/50 hover:from-lavender-light hover:to-mint-light">
+                <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-lavender flex items-center justify-center mb-4 text-xl sm:text-2xl">🏠</div>
+                <h3 class="font-serif text-lg sm:text-xl font-medium text-text-dark mb-2">Posesiones Efectivas</h3>
+                <p class="text-sm sm:text-base text-text-medium font-light leading-relaxed">Gestión de posesiones efectivas y traspasos de bienes raíces con total respaldo legal.</p>
+            </a>
+
+            <!-- Escritos y Otros -->
+            <a href="https://wa.me/+56948754478?text=Hola%20Constanza%2C%20necesito%20ayuda%20con%20la%20redacci%C3%B3n%20de%20un%20escrito%20o%20servicios%20legales%20varios." 
+               target="_blank" 
+               class="service-card block w-full bg-gradient-to-br from-mint-light to-white rounded-2xl p-5 sm:p-6 shadow-soft hover:shadow-hover border border-mint/50 hover:from-rose-light hover:to-lavender-light md:col-span-2 lg:col-span-1">
+                <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-mint flex items-center justify-center mb-4 text-xl sm:text-2xl">📝</div>
+                <h3 class="font-serif text-lg sm:text-xl font-medium text-text-dark mb-2">Escritos y Otros</h3>
+                <p class="text-sm sm:text-base text-text-medium font-light leading-relaxed">Redacción de escritos legales, demandas, contratos y otros documentos jurídicos personalizados.</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-t from-lavender-light to-white px-4 sm:px-6 py-10 sm:py-14 text-center opacity-0 animate-fade-in animate-delay-4">
+        <h3 class="font-serif text-xl sm:text-2xl text-text-dark mb-6 sm:mb-8">Contacto</h3>
+        
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
+            <a href="mailto:constanza.acevedo@email.com" 
+               class="contact-item flex items-center gap-3 px-5 sm:px-6 py-3 sm:py-4 rounded-full bg-white shadow-soft hover:shadow-hover text-text-dark">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span class="text-sm sm:text-base font-normal">constanza.acevedo@email.com</span>
+            </a>
+            
+            <a href="https://instagram.com/constanza.acevedo" 
+               target="_blank" 
+               class="contact-item flex items-center gap-3 px-5 sm:px-6 py-3 sm:py-4 rounded-full bg-white shadow-soft hover:shadow-hover text-text-dark">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                <span class="text-sm sm:text-base font-normal">@constanza.acevedo</span>
+            </a>
+        </div>
+        
+        <p class="mt-8 sm:mt-10 text-xs sm:text-sm text-text-light">© 2026 Constanza Acevedo. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
